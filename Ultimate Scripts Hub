@@ -1,0 +1,367 @@
+-- Load WindUI
+local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
+
+-- Create Main Window
+local Window = WindUI:CreateWindow({
+    Title = "Ultimate Script Hub",
+    Icon = "rbxassetid://4483345998",
+    Author = "WindUI",
+    Folder = "WindUIHub",
+    Size = UDim2.fromOffset(580, 460),
+    Transparent = true,
+    Theme = "Dark",
+    SideBarWidth = 170,
+    HasOutline = true
+})
+
+-- Create a Tab
+local Tab = Window:Tab({
+    Title = "Scripts",
+    Icon = "rbxassetid://4483345998",
+})
+
+-- Button: UFGUI
+Tab:Button({
+    Title = "UFGUI",
+    Desc = "Executes UFGUI script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sypcerr/scripts/refs/heads/main/UFGUI", true))()
+    end
+})
+
+-- Button: Custom Pastebin Script
+Tab:Button({
+    Title = "Pastebin Script",
+    Desc = "Executes custom Pastebin script",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/sDx1m66z"))()
+    end
+})
+
+-- Button: YARHM
+Tab:Button({
+    Title = "YARHM",
+    Desc = "Executes Yet Another Remote Handler Manager",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-YARHM-12403"))()
+    end
+})
+
+-- Button: Cobalt
+Tab:Button({
+    Title = "Cobalt",
+    Desc = "Executes Cobalt script",
+    Callback = function()
+        loadstring(game:HttpGet("https://gitlab.com/upio/cobalt/-/releases/permalink/latest/downloads/Cobalt.luau"))()
+    end
+})
+
+-- Button: Anti Fling
+Tab:Button({
+    Title = "Anti Fling",
+    Desc = "Executes DaHub AntiFling",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Linux6699/DaHubRevival/main/AntiFling.lua'))()
+    end
+})
+
+-- Button: AntiCheat Remover
+Tab:Button({
+    Title = "AntiCheat Remover",
+    Desc = "Executes GrayScripts AntiCheat Remover V2 LITE",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/c00lhaxOFFICAL/GrayScriptsAntiCheatRemoverV2LITE/refs/heads/main/GrayGrayGray"))()
+    end
+})
+
+-- Button: Auto Clicker
+Tab:Button({
+    Title = "Auto Clicker",
+    Desc = "Executes Universal AutoClicker",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AutoClicker-223532"))()
+    end
+})
+
+-- Button: Invisible Man
+Tab:Button({
+    Title = "Invisible Man",
+    Desc = "Executes Awesome Invisible Man script",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Awesome-Invisible-man-133400"))()
+    end
+})
+
+-- Button: Bloxstrap Setup
+Tab:Button({
+    Title = "Bloxstrap Setup",
+    Desc = "Executes Bloxstrap initiate script",
+    Callback = function()
+        getgenv().autosetup = {
+            path = 'Bloxstrap',
+            setup = true
+        }
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/qwertyui-is-back/Bloxstrap/main/Initiate.lua'), 'lol')()
+    end
+})
+
+-- Button: Cartola Hub (Brookhaven)
+Tab:Button({
+    Title = "Cartola Hub (Brookhaven)",
+    Desc = "Executes Brookhaven Cartola Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-Brookhaven-Cartola-Hub-92517"))()
+    end
+})
+
+-- Button: Cartola Hub (MM2)
+Tab:Button({
+    Title = "Cartola Hub (MM2)",
+    Desc = "Executes MM2 Cartola Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Davi999z/Cartola-Hub/refs/heads/main/MM2.lua"))()
+    end
+})
+
+-- Button: Chaos Hub
+Tab:Button({
+    Title = "Chaos Hub",
+    Desc = "Executes Chaos Hub loader",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Venom-devX/ChaosHub/main/loader.lua"))()
+    end
+})
+
+-- Button: Coquette Hub Remake
+Tab:Button({
+    Title = "Coquette Hub Remake",
+    Desc = "Executes Coquette Hub Remake script",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-Coquette-Hub-Remake-133562"))()
+    end
+})
+
+-- Button: Dex++ Decompiler Fix
+Tab:Button({
+    Title = "Dex++ Decompiler Fix",
+    Desc = "Executes Dex PlusPlus Decompiler Fix",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Dex-PlusPlus-Decompiler-Fix-206651"))()
+    end
+})
+
+-- Button: I Emote Script
+Tab:Button({
+    Title = "I Emote Script",
+    Desc = "Executes 7yd7 I Emote script",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-7yd7-I-Emote-Script-48024"))()
+    end
+})
+
+-- Button: Synapse X Remake
+Tab:Button({
+    Title = "Synapse X Remake",
+    Desc = "Executes Chillz's Synapse X Remake",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/Synapse-X-Remake.lua"))()
+    end
+})
+
+-- Button: FE Dropkick
+Tab:Button({
+    Title = "FE Dropkick",
+    Desc = "Executes FE dropkick script",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-dropkick-script-202669"))()
+    end
+})
+
+-- Button: Fly V3 X Brazil
+Tab:Button({
+    Title = "Fly V3 X Brazil",
+    Desc = "Executes Fly V3 X Brazil script",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fly-V3-X-BRAZIL-133228"))()
+    end
+})
+
+-- Button: Fly Gui V3 Redux
+Tab:Button({
+    Title = "Fly Gui V3 Redux",
+    Desc = "Executes Fly Gui V3 II Redux script",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fly-gui-V3-II-REDUX-224789"))()
+    end
+})
+
+-- Button: Fps Booster V3
+Tab:Button({
+    Title = "Fps Booster V3",
+    Desc = "Executes Universal Fps Booster V3",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fps-Booster-V3-Universal-Joshzz-56009"))()
+    end
+})
+
+-- Button: Gamepass Product
+Tab:Button({
+    Title = "Gamepass Product",
+    Desc = "Executes Universal Gamepass Product script",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Gamepass-Product-212343"))()
+    end
+})
+
+-- Button: Disable Pause Notification
+Tab:Button({
+    Title = "Disable Pause Notification",
+    Desc = "Disables gameplay paused notification",
+    Callback = function()
+        game:GetService("GuiService"):SetGameplayPausedNotificationEnabled(false)
+    end
+})
+
+-- Button: Ghost Hub
+Tab:Button({
+    Title = "Ghost Hub",
+    Desc = "Executes GhostHub script",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+    end
+})
+
+-- Button: Hide And Seek Extreme
+Tab:Button({
+    Title = "Hide And Seek Extreme",
+    Desc = "Executes Hide And Seek Extreme script",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Hide%20And%20Seek%20Extreme'))()
+    end
+})
+
+-- Button: Hitbox Visualizer
+Tab:Button({
+    Title = "Hitbox Visualizer",
+    Desc = "Executes Hitbox visualizer script",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Hitbox-visualizer-126528"))()
+    end
+})
+
+-- Button: Ruthless Hub
+Tab:Button({
+    Title = "Ruthless Hub",
+    Desc = "Executes RuthlessHub script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ValuesScripts/ValueScript/refs/heads/main/RuthlessHub"))()
+    end
+})
+
+-- Button: CyberCoders Menu II
+Tab:Button({
+    Title = "CyberCoders Menu II",
+    Desc = "Executes Murderers VS Sheriffs DUELS menu",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Murderers-VS-Sheriffs-DUELS-CyberCoders-Menu-II-193913"))()
+    end
+})
+
+-- Button: Nameless Admin
+Tab:Button({
+    Title = "Nameless Admin",
+    Desc = "Executes Nameless Admin script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua"))()
+    end
+})
+
+-- Button: Nexvoid FTF
+Tab:Button({
+    Title = "Nexvoid FTF",
+    Desc = "Executes Nexvoid script for Flee the Facility",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Flee-the-Facility-Nexvoid-Best-Script-For-FTF-236968"))()
+    end
+})
+
+-- Button: Omni Man Script
+Tab:Button({
+    Title = "Omni Man Script",
+    Desc = "Executes Universal Omni man script",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Omini-man-script-223318"))()
+    end
+})
+
+-- Button: Overdrive Hub Auth
+Tab:Button({
+    Title = "Overdrive Hub Auth",
+    Desc = "Executes Overdrive Hub authentication",
+    Callback = function()
+        loadstring(game:HttpGet("https://api.overdrivehub.xyz/v1/auth"))()
+    end
+})
+
+-- Button: Project Gravity (NDS)
+Tab:Button({
+    Title = "Project Gravity (NDS)",
+    Desc = "Executes Natural Disaster Survival Project Gravity script",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Natural-Disaster-Survival-Project-Gravity-239196"))()
+    end
+})
+
+-- Button: QuirkyCMD FE
+Tab:Button({
+    Title = "QuirkyCMD FE",
+    Desc = "Executes QuirkyCMD FE script",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-QuirkyCMD-FE-136219"))()
+    end
+})
+
+-- Button: Rejoin
+Tab:Button({
+    Title = "Rejoin",
+    Desc = "Rejoins the current server",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Jelly-plays/Rejoin-script/main/obf_L744By559M18BbuseSG6en8r1zL31daK9060LV7WyvmS4bQp92aONWfwRE36FdcZ.lua.txt"))()
+    end
+})
+
+-- Button: Seluwia Script
+Tab:Button({
+    Title = "Seluwia Script",
+    Desc = "Executes Seluwia universal script",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-SELUWIA-206699"))()
+    end
+})
+
+-- Button: SimpleSpy
+Tab:Button({
+    Title = "SimpleSpy",
+    Desc = "Executes SimpleSpy remote spy source",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
+    end
+})
+
+-- Button: Spectra Hub
+Tab:Button({
+    Title = "Spectra Hub",
+    Desc = "Executes Spectra Hub script",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-Spectra-Hub-193872"))()
+    end
+})
+
+-- Button: Game Tool Giver
+Tab:Button({
+    Title = "Game Tool Giver",
+    Desc = "Executes Sky Hub Game Tool Giver script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub-Backup/main/gametoolgiver.lua"))()
+    end
+})
